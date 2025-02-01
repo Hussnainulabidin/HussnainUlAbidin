@@ -1,0 +1,573 @@
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #3498db;
+  --accent-color: #e74c3c;
+  --background-color: #ecf0f1;
+  --text-color: #333333;
+  --light-text-color: #ffffff;
+  --section-background: #ffffff;
+  --section-border: #d1d8e0;
+}
+
+/* Basic reset */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100%; 
+}
+
+/* Body background */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* Centered Navbar Container */
+header {
+  position: fixed;
+  top: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  background-color: var(--primary-color);
+  padding: 13px 0;
+  border-radius: 30px;
+  z-index: 100;
+}
+
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: var(--light-text-color);
+  text-decoration: none;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Adjust for FontAwesome icons */
+nav ul li a i {
+  margin-right: 8px;
+}
+
+/* Hover effect - change background color to secondary color */
+nav ul li a:hover {
+  text-decoration: none; /* Ensures no underline on hover */
+  background-color: var(--secondary-color);
+  color: var(--light-text-color);
+  border-radius: 30px;
+}
+
+/* Content section padding and styling */
+section {
+  margin-top: 7%;
+  padding: 30px;
+  background-color: var(--section-background);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  border: 1px solid var(--section-border);
+}
+
+/* About Me Section */
+#aboutme {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  background-color: #f0f4f7;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.about-image {
+  flex: 1;
+  text-align: center;
+  margin-right: 30px;
+}
+
+.about-image img {
+  width: 300px;
+  height: 500px;
+  border-radius: 2%;
+  object-fit: cover;
+  border: 2px solid gray;
+}
+
+.about-text {
+  flex: 2;
+  text-align: left;
+  padding-left: 50px;
+}
+
+.about-text h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
+.tagline {
+  font-size: 30px;
+  color: var(--secondary-color);
+  margin-bottom: 20px;
+  font-weight: bold;
+
+}
+
+.description {
+  font-size: 16px;
+  color: var(--text-color);
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-weight: 10;
+}
+
+.info {
+  margin-bottom: 20px;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between; /* This ensures Name and Email are on opposite ends */
+  margin-bottom: 10px;
+}
+
+.info-row div {
+  font-size: 16px;
+  width: 48%; /* Give each <div> enough space to avoid overflow */
+}
+
+.info-row div strong {
+  margin-right: 8px; /* Space between the label (strong) and the text */
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.buttons .btn {
+  padding: 10px 20px;
+  background-color: var(--secondary-color);
+  color: var(--light-text-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.buttons .btn:hover {
+  background-color: var(--accent-color);
+}
+
+/* General styling for the Education section */
+#education {
+  padding: 20px;
+  background-color: #f0f4f7;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+}
+
+/* Heading styling */
+#education h4 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Styling for each education item */
+.education-item {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 110%; /* Adjust width as needed */
+}
+
+.education-item p strong {
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+.education-ins {
+  color: #3498db;
+  font-weight: 600; /* Increased weight for better visibility */
+  font-size: 1.2rem; /* Increase font size */
+}
+
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  #education {
+      padding: 15px;
+  }
+
+  .education-item {
+      padding: 10px;
+      width: 90%; /* Adjust width for smaller screens */
+  }
+}
+
+/* Skills Section */
+#skills {
+  padding: 30px 50px; /* Added horizontal padding */
+  background-color: #f0f4f7; /* Light background for skills section */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Skills Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 20px;
+  justify-content: center; 
+  align-items: flex-start; 
+  max-width: 1200px; /* Limit the width */
+  margin: 0 auto; /* Center the grid */
+}
+
+.skill-header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center; /* Center the grid */
+}
+
+/* Skill Box */
+.skill {
+  background-color: #ffffff; /* White background for skill box */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #d1d8e0; /* Light border */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  height: 150px; 
+  overflow: hidden; /* Prevent content overflow */
+}
+
+.skill-icon {
+  width: 40px; /* Adjust based on icon size */
+  height: 40px;
+}
+
+/* Skill Name */
+.skill h5 {
+  font-size: 20px;
+  color: #2c3e50; /* Dark color for skill name */
+  margin: 10px 0;
+}
+
+/* Description Text */
+.description-text {
+  font-size: 16px;
+  color: #7f8c8d; /* Light grey text */
+  margin-bottom: 10px;
+  flex-grow: 1;
+}
+
+/* Expertise Text */
+.expertise {
+  font-weight: bold;
+  font-size: 16px;
+  color: #2c3e50;
+}
+
+.skill:hover {
+  transform: translateY(-5px); /* Lift the skill box on hover */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr 1fr; /* Adjust to 2 columns on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-grid {
+    grid-template-columns: 1fr; /* Adjust to 1 column on mobile screens */
+  }
+}
+
+/* Experience Section */
+
+#experience {
+  background-color: #f0f4f7;
+
+}
+#exp {
+  text-align: center;
+}
+
+.make-centre {
+  background-color: #f0f4f7;
+  display: flex;
+  justify-content: center;  /* Center the content horizontally */
+  align-items: center;      /* Center the content vertically */
+  padding: 20px 20px;
+}
+
+.experience-entry {
+  text-align: left;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #d1d8e0;
+  margin-bottom: 20px;
+  max-width: 800px; /* Limit the maximum width for better presentation */
+  width: 100%;
+}
+
+
+.experience-entry h4 {
+  font-size: 25px;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.company-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--secondary-color);
+  margin-bottom: 5px;
+}
+
+.date {
+  font-size: 16px;
+  color: #7f8c8d;
+  margin-bottom: 15px;
+}
+
+.description {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.description ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  color: #7f8c8d;
+}
+
+.description li {
+  margin-bottom: 5px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.description li:before {
+  content: "\2022";
+  color: var(--secondary-color);
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+a {
+  color: var(--secondary-color);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+/* Contact Section */
+#contact {
+  padding: 50px 20px;
+  background-color: #f0f4f7;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-info {
+  flex: 1;
+  text-align: left;
+  padding: 20px;
+}
+
+.contact-info h4 {
+  font-size: 24px;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.contact-info .subheading {
+  font-size: 18px;
+  color: var(--secondary-color);
+  margin-bottom: 20px;
+}
+
+.contact-info .description {
+  font-size: 16px;
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
+
+.social-links {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.social-links li {
+  margin-right: 20px;
+}
+
+.social-links a {
+  font-size: 24px;
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: var(--secondary-color);
+}
+
+/* Contact Form */
+.contact-form {
+  flex: 1;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h4 {
+  font-size: 24px;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 95%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--secondary-color);
+  color: var(--light-text-color);
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: var(--accent-color);
+}
+
+
+
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .contact-content {
+    flex-direction: column;
+  }
+
+  .social-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact-form button {
+    width: auto;
+  }
+}
+
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  nav ul li a span {
+    display: none;
+  }
+
+  nav ul li a i {
+    font-size: 24px;
+  }
+
+  nav ul {
+    justify-content: space-between;
+  }
+}
+
+
+
+
+/* Media Query for larger screens to remove icons */
+@media (min-width: 769px) {
+  nav ul li a i {
+    display: none;
+  }
+
+  nav ul li a span {
+    display: inline-block;
+    margin-left: 8px;
+  }
+}
+
+/* Add this new rule for other sections if needed */
+.content-section {
+  background-color: var(--section-background);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-bottom: 20px;
+  border: 1px solid var(--section-border);
+}

@@ -1,0 +1,155 @@
+/* General reset and font setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Header Styling */
+header {
+    background-color: #2c3e50;
+    position: fixed;
+    top: 3%;
+    left: 10%;
+    width: 80%;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    padding: 13px 0;
+    border-radius: 30px;
+}
+
+h1 {
+    font-size: 25px;
+}
+
+/* Container for the projects */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns by default */
+    gap: 50px;
+    row-gap: 2rem; /* Adds space specifically between rows */
+    padding: 100px 5%; /* Add left and right padding to create gap */
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 100%; /* Ensure each card takes full width of its container */
+    height: 250px;
+    margin-top: 40px;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Styling */
+.project-img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px 0 0 8px;
+}
+
+/* Project Info Styling */
+h2 {
+    color: #3498db;
+}
+.project-info {
+    padding: 1rem;
+    margin-left: 20px;
+    flex: 1;
+}
+
+.project-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.tech-stack {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.tech-stack button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+.tech-stack button:hover {
+    background-color: #555;
+}
+
+.project-description {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Responsive design for mobile (screens 768px and below) */
+@media screen and (max-width: 768px) {
+    .projects-container {
+        grid-template-columns: 1fr; /* 1 column on smaller screens */
+        padding: 2rem 5%; /* Maintain gap even on smaller screens */
+    }
+
+    .project-card {
+        flex-direction: column; /* Stack image and info vertically */
+        height: auto;  /* Allow the height to adjust based on content */
+    }
+
+    .project-img {
+        width: 100%;
+        height: 200px;
+        border-radius: 8px 8px 0 0; /* Round the top corners */
+    }
+
+    .project-info {
+        padding: 1rem;
+        margin-left: 0; /* Remove left margin */
+        margin-top: 10px; /* Space between image and project info */
+    }
+
+    .project-info h2 {
+        font-size: 1.5rem;
+        margin-bottom: 10px; /* Add some margin for better spacing */
+    }
+
+    .tech-stack {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    .tech-stack button {
+        padding: 0.5rem 1rem; /* Adjust padding for smaller screens */
+    }
+
+    .project-description {
+        font-size: 1rem;
+        color: #555;
+    }
+}

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your CV</title>
+    <link href="styles.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="#aboutme"><i class="fas fa-user"></i><span>About</span></a>
+          </li>
+          <li>
+            <a href="#skills"><i class="fas fa-cogs"></i><span>Skills</span></a>
+          </li>
+          <li>
+            <a href="project.html"
+              ><i class="fas fa-project-diagram"></i><span>Projects</span></a
+            >
+          </li>
+          <li>
+            <a href="#experience"
+              ><i class="fas fa-briefcase"></i><span>Experience</span></a
+            >
+          </li>
+          <li>
+            <a href="#contact"
+              ><i class="fas fa-envelope"></i><span>Contact Me</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="aboutme">
+      <div class="about-content">
+        <!-- Left side: Image -->
+        <div class="about-image">
+          <img src="img/Screenshot 2025-01-31 193938.png" alt="Your Image" />
+        </div>
+
+        <!-- Right side: Text -->
+        <div class="about-text">
+          <h4>About Me</h4>
+          <p class="tagline">
+            A passionate Full Stack Developer & Block Chain Enthusiast
+          </p>
+          <p class="description">
+            As a dedicated computer science student at the National University
+            of Computer and Emerging Sciences, I bring a passion for full stack
+            development alongside a diverse project portfolio. From crafting
+            engaging 2D games to tackling intricate problems in Data Structures
+            and Algorithms, I thrive on challenges. My keen interest in
+            development drives me to optimize systems and ensure seamless
+            functionality behind the scenes.
+          </p>
+
+          <div class="info">
+            <div class="info-row">
+              <div><strong>Name:</strong></div>
+              <div><strong>Email:</strong></div>
+            </div>
+            <div class="info-row">
+              <div>Hussnain Ul Abidin</div>
+              <div>hussnainulabidin707@gmail.com</div>
+            </div>
+            <div class="info-row">
+              <div><strong>Location:</strong></div>
+              <div><strong>Availability:</strong></div>
+            </div>
+            <div class="info-row">
+              <div>Islamabad, Pakistan</div>
+              <div>Available for work</div>
+            </div>
+          </div>
+
+          <div class="buttons">
+            <button class="btn" onclick="window.location.href='CV-Final.pdf'">
+              Download CV
+            </button>
+            <button class="btn" onclick="window.location.href='project.html'">
+              View Projects
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <h4>Education</h4>
+      <div class="education-id-container">
+        <div class="education-item">
+          <p class="degree-program"><strong>BS in Computer Science</strong></p>
+          <span class="education-ins">National University of Computer and Emerging Sciences</span>
+          <p>GPA: 3.0</p>
+        </div>
+
+        <div class="education-item">
+          <p><strong>Higher Secondary School Certificate</strong></p>
+          <p class="education-ins">Fauji Foundation College</p>
+          <p>GPA: 3.5</p>
+        </div>
+
+        <div class="education-item">
+          <p><strong>Matriculation</strong></p>
+          <p class="education-ins">Fauji Foundation College</p>
+          <p>GPA: 3.7</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h4>Skills & Expertise</h4>
+      <p class="tagline">My Technical Proficiency</p>
+      <p class="description">
+        Explore my technical skills and expertise across different domains of
+        software development.
+      </p>
+
+      <!-- Skills Grid -->
+      <div class="skills-grid">
+        <div class="skill">
+          <div class="skill-header">
+            <img
+              src="Img/icons8-python-501.png"
+              alt="Python Icon"
+              class="skill-icon"
+            />
+            <h5>Python</h5>
+          </div>
+          <p class="description-text">
+            I have developed various web applications and tools using Python,
+            including automation scripts and data processing.
+          </p>
+          <p class="expertise">Expertise: 90%</p>
+        </div>
+        <div class="skill">
+          <div class="skill-header">
+            <img
+              src="Img/icons8-javascript-50.png"
+              alt="Python Icon"
+              class="skill-icon"
+            />
+            <h5>JavaScript</h5>
+          </div>
+          <p class="description-text">
+            JavaScript is my primary language for frontend and full-stack
+            development. I've built dynamic UIs and server-side applications.
+          </p>
+          <p class="expertise">Expertise: 85%</p>
+        </div>
+        <div class="skill">
+          <div class="skill-header">
+            <img
+              src="Img/icons8-c-50.png"
+              alt="Python Icon"
+              class="skill-icon"
+            />
+            <h5>C/C++</h5>
+          </div>
+          <p class="description-text">
+            Utilized for game development and performance-critical applications.
+            I have a strong understanding of memory management.
+          </p>
+          <p class="expertise">Expertise: 75%</p>
+        </div>
+        <div class="skill">
+          <div class="skill-header">
+            <img
+              src="Img/icons8-java-50.png"
+              alt="Python Icon"
+              class="skill-icon"
+            />
+            <h5>Java</h5>
+          </div>
+          <p class="description-text">
+            Built efficient back-end applications using Java and Spring Boot.
+          </p>
+          <p class="expertise">Expertise: 80%</p>
+        </div>
+        <div class="skill">
+          <div class="skill-header">
+            <img
+              src="Img/icons8-node-js-64.png"
+              alt="Python Icon"
+              class="skill-icon"
+            />
+            <h5>Node.js</h5>
+          </div>
+          <p class="description-text">
+            Built back-end services and APIs with Node.js, utilizing Express.js
+            and various middlewares.
+          </p>
+          <p class="expertise">Expertise: 85%</p>
+        </div>
+        <div class="skill">
+          <div class="skill-header">
+            <img
+              src="Img/icons8-.net-framework-48.png"
+              alt="Python Icon"
+              class="skill-icon"
+            />
+            <h5>.Net</h5>
+          </div>
+          <p class="description-text">
+            Developed scalable applications using C# and .NET Framework for high
+            performance and reliability.
+          </p>
+          <p class="expertise">Expertise: 70%</p>
+        </div>
+        <div class="skill">
+          <div class="skill-header">
+            <img
+              src="Img/icons8-assembly-48.png"
+              alt="Python Icon"
+              class="skill-icon"
+            />
+            <h5>Assembly</h5>
+          </div>
+          <p class="description-text">
+            Programmed low-level applications with Assembly for optimized
+            performance and hardware interaction.
+          </p>
+          <p class="expertise">Expertise: 95%</p>
+        </div>
+        <div class="skill">
+          <div class="skill-header">
+            <img
+              src="Img/icons8-docker-50.png"
+              alt="Python Icon"
+              class="skill-icon"
+            />
+            <h5>Docker</h5>
+          </div>
+          <p class="description-text">
+            Used Docker to containerize applications for easier deployment and
+            scaling across environments.
+          </p>
+          <p class="expertise">Expertise: 80%</p>
+        </div>
+        <div class="skill">
+          <div class="skill-header">
+            <img
+              src="Img/icons8-git-50 (1).png"
+              alt="Python Icon"
+              class="skill-icon"
+            />
+            <h5>Git</h5>
+          </div>
+          <p class="description-text">
+            Version control using Git for collaborative projects. Familiar with
+            Git workflows, branches, and merges.
+          </p>
+          <p class="expertise">Expertise: 95%</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h4 id="exp">Experience</h4>
+      <div class="make-centre">
+        <div class="experience-entry">
+          <h4>Full Stack Developer Intern</h4>
+          <p class="company-name">One Day Event Insurance</p>
+          <p class="date">June 2023 - Aug 2023 ⸱ 3 mos</p>
+          <div class="description">
+            <ul>
+              <li>
+                Wrote backend API using Node.js and implemented UI designs.
+              </li>
+              <li>Optimized different route's endpoints.</li>
+              <li>Integrated third-party APIs.</li>
+            </ul>
+          </div>
+          <p>
+            <strong>Contact:</strong> Nusrat Hina -
+            <a href="mailto:Hina@insure123.com">Hina@insure123.com</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h4 id="exp">Contact Me</h4>
+
+      <div class="contact-content">
+        <!-- Left Column -->
+        <div class="contact-info">
+          <h4>Get in Touch</h4>
+          <p class="tagline">Let's create something amazing together</p>
+          <p class="description">
+            Reach out today to discuss your project needs and start
+            collaborating on something extraordinary!
+          </p>
+
+          <ul class="social-links">
+            <li>
+              <a href="https://github.com/Hussnainulabidin" target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+            </li>
+            <li>
+              <a href="mailto:hussnainulabidin707@gmail.com" target="_blank"
+                ><i class="fas fa-envelope"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/hussnain-ul-abidin-7a422b264/"
+                target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://discord.com/users/yourdiscord" target="_blank"
+                ><i class="fab fa-discord"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/profile.php?id=100044208218403"
+                target="_blank"
+                ><i class="fab fa-facebook"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Right Column -->
+        <div class="contact-form">
+          <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+            <textarea
+              name="project"
+              placeholder="Tell me about your project"
+              required
+            ></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
